@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/company.css">
+</head>
+<body>
+    <a href="/total">total</a>
+    <div class="tekito">
+        <table class="table" >
+                <thead class="thead-light">
+                <tr>
+                    <th>証券番号</th>
+                    <th>銘柄名</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for i in range(start,last) %}
+                <tr>
+                    <td>{{ data_lists[i][1] }}</td>
+                    <td class="sname">{{ data_lists[i][2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    <nav class="pagination">
+        <div class="nav-links">
+          <a class="first page-numbers" href="">&laquo;</a>
+          <a class="prev page-numbers" href="">&lsaquo;</a>
+          <span aria-current="page" class="page-numbers current">1</span>
+          <a class="page-numbers" href="/company/11/20">2</a>
+          <a class="page-numbers" href="/company/21/30">3</a>
+          <span class="page-numbers dots">…</span>
+          <a class="page-numbers" href="">10</a>
+          <a class="next page-numbers" href="">&rsaquo;</a>
+          <a class="last page-numbers" href="">&raquo;</a>
+        </div>
+      </nav>
+    </div>
+</body>
+</html>

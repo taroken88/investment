@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <title>Document</title>
+</head>
+<body>
+{% block header %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+{% endblock %}
+
+    <a href="/total">total</a>
+    <div class="container">
+        <div class="row my-4">
+            <canvas id="myChart"></canvas>
+        </div>
+        <input type="hidden" id="chart_labels" name="chart_labels" value="{{ c.chart_labels }}">
+        <input type="hidden" id="chart_title" name="chart_title" value={{ c.chart_title }}>
+        <input type="hidden" id="chart_target" name="chart_target" value={{ c.chart_target }}>
+        <input type="hidden" id="chart_data" name="chart_data" value="{{ c.chart_data }}">
+    </div>
+    <script type="text/javascript" src="static/js/predict.js"></script>
+    <!-- {{ c.chart_labels }}
+    {{ c.chart_title }}
+    {{ c.chart_target }}
+    {{ c.chart_data }} -->
+</body>
+</html>

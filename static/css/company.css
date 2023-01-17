@@ -1,0 +1,63 @@
+.sname{
+    text-align: center;
+}
+
+table{
+    margin: 15px auto;
+    
+
+}
+
+.pagination {
+    text-align: center;
+  }
+  .pagination a,
+  .pagination span {
+    display: inline-block;
+    margin: 8px 4px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    padding: 18px 0;
+    box-sizing: border-box;
+    color: #899a96;
+    line-height: 1;
+  }
+  .pagination a:hover {
+    opacity: 0.7;
+  }
+  .pagination .current {
+    background: transparent;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .pagination a,
+    .pagination span {
+      margin: 4px 2px;
+      width: 46px;
+      height: 46px;
+      padding: 16px 0;
+    }
+  }
+  
+  /* 装飾 */
+  
+  body {
+    margin: 80px 0;
+    background-color: #edf1fa;
+    
+    
+  }
+
+.thead-light{
+  width: 50px;
+}
+
+.tekito{
+    
+margin: 0 auto;
+width: 70vw;
+}

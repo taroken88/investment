@@ -1,0 +1,146 @@
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+
+}
+
+.search {
+    height: 50vh;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+    
+}
+
+.box_item {
+    height: 100px;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 200%; 
+    display: inline-block;
+	width: 40%;
+	height: 100px;
+	background: whitesmoke;
+	background: linear-gradient(135deg, transparent 15px, whitesmoke 0) top left,
+	linear-gradient(-135deg, transparent 15px, whitesmoke 0) top right,
+	linear-gradient(-45deg, transparent 15px, whitesmoke 0) bottom right,
+	linear-gradient(45deg, transparent 15px, whitesmoke 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 200%; 
+    justify-content: center;
+    z-index: 2;
+
+}
+h1 {
+    color: blue;
+}
+
+.box_link {
+    display: inline-block;
+    vertical-align: middle;
+    padding:20px 0;
+    color: yellowgreen;
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+.abc{
+    position: relative;
+    bottom: 15px;
+    right: 10px;
+}
+
+.button{
+    display: block ;
+    position : relative ;
+    width : 300px ;
+    height : 100px ;
+    background: rgb(153,191,187);
+    background: radial-gradient( rgba(93,108,107,.3) 0%, rgba(95,162,158,0) 90%);
+    box-shadow : 0 0 24px rgba(116,132,145,1) ;
+    transition : all .7s ease ;
+}
+
+.button::before{
+    content : '' ;
+    position : absolute ;
+    z-index : 2 ;
+    top : -4px ;
+    left : 0 ;
+    width : 160px ;
+    height : 10px ;
+    margin-right: 10%;
+    border-radius : 50% ;
+    background: rgb(170,255,240);
+    background: radial-gradient( rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33%, rgba(255,255,255,0) 100%);
+}
+.button::after{
+    content : '' ;
+    position : absolute ;
+    z-index : 2 ;
+    bottom : -4px ;
+    right : 0 ;
+    width : 160px ;
+    height : 10px ;
+    border-radius : 50% ;
+    background: rgb(170,255,240);
+    background: radial-gradient( rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33%, rgba(255,255,255,0) 100%);
+}
+.button__wrapper{
+    width : 100% ;
+    height :100% ;
+    clip-path: polygon(0% 0%, 0 100%, 0.7% 100%, 0.7% 3%, 99.3% 3%, 99.3% 98%, 0% 98%, 0% 100%, 100% 100%, 100% 0%);
+    background-color:hsla(0,0%,100%,1);
+    background-image:
+    radial-gradient(at 0% 0%, hsla(180,100%,98%,1) 0px, transparent 50%),
+    radial-gradient(at 29% 0%, hsla(189,100%,78%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 48%, hsla(355,0%,100%,1) 0px, transparent 50%),
+    radial-gradient(at 100% 62%, hsla(340,0%,100%,1) 0px, transparent 50%),
+    radial-gradient(at 90% 98%, hsla(169,88%,83%,1) 0px, transparent 50%),
+    radial-gradient(at 26% 100%, hsla(240,0%,44%,1) 0px, transparent 50%),
+    radial-gradient(at 79% 0%, hsla(336,0%,51%,1) 0px, transparent 50%);
+}
+.button__box{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    position : absolute ;
+    z-index : 1 ;
+    top : 3% ;
+    left : 5% ;
+    width : 100% ;
+    height : 94% ;
+    color :white ;
+    letter-spacing : 5px ;
+    background: rgb(255,255,255);
+    background: linear-gradient(120deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,0) 50%);
+    transition : all 1s ease ;
+}
+.button__box::before{
+    content : '' ;
+    position : absolute ;
+    z-index : -1 ;
+    top : 0 ;
+    left : 0 ;
+    width : 100% ;
+    height : 100% ;
+    margin-right: 10%;
+    background : linear-gradient( 120deg , rgba(255,255,255,.4),rgba(255,255,255,0)) ;
+    clip-path : path('M215.98,12.57c8.09,0,16.1,.12,24.02,.33V0H0V44.89C53.01,25.06,130.12,12.57,215.98,12.57Z');
+}
+
